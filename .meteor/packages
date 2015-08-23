@@ -1,0 +1,25 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+autopublish
+insecure
+coffeescript
+fortawesome:fontawesome
+cfs:graphicsmagick
+iron:router
+multiply:iron-router-progress
+spiderable
+zimme:iron-router-active
+percolate:momentum-iron-router
+percolate:momentum
+natestrauser:animate-css
+meteorhacks:subs-manager
+fastclick
+timmyg:wow
+tsega:skrollr
+jquery-waypoints
+twbs:bootstrap

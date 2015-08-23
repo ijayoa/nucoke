@@ -1,0 +1,132 @@
+
+
+<template name="main">
+
+	{{> mainTopfold}}
+
+</template>
+
+
+
+<template name="mainTopfold">
+	<script>
+
+		$(document).ready(function() {
+			  $('a[href*=#]').each(function() {
+				    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+					    && location.hostname == this.hostname
+					    && this.hash.replace(/#/,'') ) {
+					      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+				      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+				       if ($target) {
+					         var targetOffset = $target.offset().top;
+					         $(this).click(function() {
+						$("#nav li a").removeClass("active");
+						$(this).addClass('active');
+						           $('html, body').animate({scrollTop: targetOffset}, 1000);
+						           return false;
+					         });
+				      }
+			    }
+		  });
+
+		});
+
+
+	</script>
+	<script>
+		new WOW().init();
+	</script>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="slide1">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col-md-6 col-xs-12 wow slideInDown text-center">
+							<img src="../../img/cocalogo.png" class="img" style="  max-width: 100%; height: auto;" >
+							<h3 class="subtitle text-center">Enjoy the Real Taste of Refreshment</h3>
+							<p class="value-prop mt"><strong>Coca Cola</strong> is a Soda Drink that leaves you feeling <br> refreshed and re-energized.</p>
+							<img src="../../img/scroll.png" width="100" height="100" class="wow pulse mt img" data-wow-delay="300ms" data-wow-iteration="infinite">
+							<p class="scroll-text">explore</p>
+
+						</div>
+						<div class="col-md-6 col-xs-12 text-center wow slideInUp hidden-xs">
+							<img src="../../img/productimg.png"  class="img img-responsive right">
+
+						</div>
+					</div>
+				</div>
+			</div> 
+
+			<div id="slide3">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-xs-12 wow fadeInUp">
+								<h3 class="slide3sub text-center">Share <strong>Coca Cola</strong> with friends and family at work and at home.</h3>
+							</div>
+						</div>
+
+						<div class="row">
+
+							<div class="col-md-6 col-xs-12 wow slideInLeft text-center">
+								<img src="../../img/botsp.png"  class="img">
+							</div>
+							<div class="col-md-6 col-xs-12  wow slideInUp text-center">
+								<img src="../../img/colasplash.png"  class="img">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-xs-12 wow fadeInUp">
+								<h3 class="slide3sub text-center">Enjoy a bottle of <strong>Coca Cola</strong> everyday ... </h3>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+			</div> 
+
+
+			<div id="slide5">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12  wow slideInLeft">
+							<h3 class="subtitle text-center">say yes to the <b>FIZZ !!!</b></h3>
+							<h3 class="slide3subdark text-center"><strong>Coca Cola</strong> is packed with exciting <b>bubbles of sweetness</b> and satisfaction energizing you to exceed you daily expectations.</h3>
+							<div class="row text-center">
+								<img src="../../img/large.png" class="img wow tada">
+							</div>
+
+						</div>
+						<div class="col-sm-6 col-xs-12  wow fadeInUp">
+						<img src="../../img/splash_girl.png" width="500"  height="500" class="img img-responsive">
+						</div>
+					</div>
+				</div>
+			</div> 
+
+			<div id="slide4">
+				<div class="container">
+					<div class="row">
+						<div class="text-center col-xs-12  wow bounceInLeft">
+							<button class="btn cta wow wobble">Buy <b>Coca Cola</b> Now</button>
+							<br>
+							<small>Get Open Happiness</small>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+	
+
+
+	<!-- SLIDES END -->
+
+
+
+</template>
