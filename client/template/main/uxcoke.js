@@ -1,24 +1,16 @@
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+// Template.main.rendered = function () {
+//   console.log('renderd main');
+//   var waypoint = new Waypoint({
+//         element: document.getElementById('slide3'),
+//         handler: function(direction) {
+//             // console.log('this hit slide3');
+//             $('audio').trigger("play");
+            
+//             Meteor.setTimeout(
+//               $("audio").prop("muted",!$("audio").prop("muted"))
+//               // $("audio").prop("currentTime",$("audio").prop("currentTime")+5)
+//               ,100000)
+//         }
+//   })
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
-
+// };

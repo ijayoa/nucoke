@@ -8,6 +8,14 @@ Author: Samuel Dalusung
 --------------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
+#iron-router-progress {
+    background-color : #980008;
+    box-shadow       : 0 0 5px #C00711;
+}
+#iron-router-progress.spinner:before {
+    border-color : #980008;
+}
+
 body{
 	margin: 0;
     font-family: 'Lato', sans-serif;
